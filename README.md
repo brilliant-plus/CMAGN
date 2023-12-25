@@ -1,5 +1,5 @@
-# CMAGN
-This code and data were provided for the paper ""
+# CMA-model
+This code and data are used to predict the association of circRNA miRNA
 
 ## how to use
 Run main.py
