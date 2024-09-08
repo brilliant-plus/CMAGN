@@ -18,9 +18,9 @@ warnings.filterwarnings("ignore")
 starttime = time.time()
 
 # data
-seqSimMatrix_circRNA = pd.read_csv("data/seqSim_circRNA.csv", header=None, dtype=np.float32).to_numpy()
-seqSimMatrix_miRNA = pd.read_csv("data/seqSim_miRNA.csv", header=None, dtype=np.float32).to_numpy()
-association = pd.read_csv("data/matrix_AS.csv", header=None).to_numpy()
+seqSimMatrix_circRNA = pd.read_csv("data/asso_mi_circ_9589/seqSim_circRNA.csv", header=None, dtype=np.float32).to_numpy()
+seqSimMatrix_miRNA = pd.read_csv("data/asso_mi_circ_9589/seqSim_miRNA.csv", header=None, dtype=np.float32).to_numpy()
+association = pd.read_csv("data/asso_mi_circ_9589/matrix_AS.csv", header=None).to_numpy()
 
 seed, n_splits = 10, 5
 c_threshold, d_threshold, epochs, reconstruct_similarity, analyzer = [0.8], [0.8], [200], ["cos"], ["xj-NCP"]
